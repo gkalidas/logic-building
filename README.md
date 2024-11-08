@@ -10,4 +10,4 @@ a9q4.c      : Program to convert Fahrenheit to celcius.
 19a5.c      : Program to convert sq feet to sq meter.
 
 a10q1.c     : Program to print given range.
-
+a10q2.c     : Program to print even numbers in a given range.
