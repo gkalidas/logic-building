@@ -11,3 +11,4 @@ a9q4.c      : Program to convert Fahrenheit to celcius.
 
 a10q1.c     : Program to print given range.
 a10q2.c     : Program to print even numbers in a given range.
+a10q3.c     : Program to display addition of a given range.
