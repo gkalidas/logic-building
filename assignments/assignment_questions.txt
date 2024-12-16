@@ -1,0 +1,145 @@
+
+Important topics for DS
+
+Structure declaration
+Members of Structure
+Structure object creation
+Structure member initialization
+. and -> operator to access the Structure Members
+dynamic memory allocation for Structure using malloc and new
+self-referential Structure
+while loop for traversal
+call by value and call by address
+pointer to Structure
+pointer to pointer to a Structure
+typeof for pointer
+user defined macros
+
+assignment_31
+assignment_32
+assignment_33
+assignment_34
+assignment_35
+
+assignment_36
+    Write a java program which accepts a string from user and count number of captial characters.
+    Write a java program which accepts a string from user and count number of small characters.
+    Write a java program which accepts a string from user and return difference between frequency of small and captial characters
+    Write a java program which accepts a string from user and check whether it contains vowels or not in it.
+    Write a java program which accepts a string from user and display it in reverse order.
+
+assignment_37
+    Write a java program which accepts a number from user and return the difference between the summation of even and odd numbers.
+    Write a java program which accepts N numbers from user and display such elements which are divisible by 5.
+    Write a java program which accepts N numbers from user and display such elements which are even and divisible by 5.
+    Write a java program which accepts N numbers from user and display such elements which are divisible by 3 and 5.
+    Write a java program which accepts N numbers from user and display such elements which are nultiples of 11.
+
+assignment_38
+    Write a java program which accepts a number from user and return the count of even digits
+    Write a java program which accepts a number from user and return the count of odd digits
+    Write a java program which accepts a number from user and return the count of digits between 3 and 7(include 3 and 7 also)
+    Write a java program which accepts a number from user and return the multiplication of all digits
+    Write a java program which accepts a number from user and return the difference between the summation of even and odd numbers.
+
+assignment_39
+    Write a java program which accepts N numbers from user and accept one another number NO, check where NO is present or not.
+    Write a java program which accepts N numbers from user and accept one another number NO, return index of first occurance of NO.
+    Write a java program which accepts N numbers from user and accept one another number NO, return index of last occurance of NO.
+    Write a java program which accepts N numbers from user and accept Range(start, end), 
+    // Input 
+    N : 6
+    start: 60
+    end: 90
+    elements: 85 66 3 76 93 88
+    // Output
+    66 76 88
+    Write a java program which accepts a number from user and return the product/multiplication of all odd digits
+
+assignment_40
+    Draw stack layout of each program separately
+    Write a recursive program which display below pattern
+    // Output
+    * * * * *
+
+    Write a recursive program which display below pattern
+    // Output
+    1 2 3 4 5
+
+    Write a recursive program which display below pattern
+    // Output
+    5 4 3 2 1
+
+    Write a recursive program which display below pattern
+    // Output
+    A B C D E F
+
+    Write a recursive program which display below pattern
+    // Output
+    a b c d e f
+
+assignment_41
+    same as assignment_40
+
+assignment_42
+    Write a recursive program which accepts input from user and display below pattern.
+    // Input
+    5
+    // Output
+    5 * 4 * 3 * 2 * 1 *
+
+    Write a recursive program which accepts input from user and return the sum of all digits
+    // Input
+    879
+    // Output
+    24
+
+    Write a recursive program which accepts string from user and return the number of characters in it
+    // Input
+    hello
+    // output
+    5
+
+    Write a recursive program which accepts number from user and return its factorial
+    // Input
+    5
+    // output
+    120
+
+    Write a recursive program which accepts number from user and return product of it's digits
+    // input
+    523
+    // output
+    30
+
+assignment_43
+Write a recursive program which accepts string from user and return white spaces in it
+// Input
+HE llo WOR ld
+// output
+3
+
+Write a recursive program which accepts number from user and return largest number amongs
+// input
+87983
+// output
+9
+
+Write a recursive program which accepts string from user and return number of small characters in it
+// input
+HEllWOrlD
+// output
+5
+
+
+Write a recursive program which accepts number from user and return smallest number amongs
+// input
+87983
+// output
+3
+
+Write a recursive program which accepts number from user and return reverse of the given number
+// input
+523
+// output
+325
