@@ -3,3 +3,10 @@
 !*.c
 !*.cpp
 !Makefile
+!c_programs
+!cpp_programs
+!java_programs
+
+# git config user.name "gkalidas"
+# git config user.email "ganeshlondhe2020@gmail.com"
+# git config --local --list
