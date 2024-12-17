@@ -47,6 +47,11 @@ assignment_34
     (Nibble is a group of four bits.)
 
 assignment_35
+    Write a program which accepts one number from user and count number of ON(1) bits in it without using % and / operator.
+    Write a program which accepts two number from user and display position of common ON bits from that two numbers
+    Write a program which accepts one number from user and check whether 9th and 12th bits are ON or OFF.
+    Write a program which accepts one number from user and two positions and check whether bit at first and bit at second position is ON or OFF.
+    Write a program which accepts one number from user and range of positions. Toggle all bits from that range.
 
 assignment_36
     Write a java program which accepts a string from user and count number of captial characters.
