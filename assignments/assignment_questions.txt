@@ -38,13 +38,13 @@ assignment_33
     Write a program which accepts one number from user and ON the first 4 bits of that number, return modified number.
 
 assignment_34
-Write a program which accepts one number from user and position from user and check whether bit at that position is on or off.
-If a bit is one return TRUE otherwise return FALSE.
-Write a program which accepts one number from user and position from user and OFF that bit of that number, return modified number.
-Write a program which accepts one number from user and position from user and ON that bit of that number, return modified number.
-Write a program which accepts one number from user and position from user and toggle that bit of that number, return modified number.
-Write a program which accepts one number from user and toggle contetns of first and last nible of the number. Return modified number.
-(Nibble is a group of four bits.)
+    Write a program which accepts one number from user and position from user and check whether bit at that position is on or off.
+    If a bit is one return TRUE otherwise return FALSE.
+    Write a program which accepts one number from user and position from user and OFF that bit of that number, return modified number.
+    Write a program which accepts one number from user and position from user and ON that bit of that number, return modified number.
+    Write a program which accepts one number from user and position from user and toggle that bit of that number, return modified number.
+    Write a program which accepts one number from user and toggle contetns of first and last nible of the number. Return modified number.
+    (Nibble is a group of four bits.)
 
 assignment_35
 
