@@ -24,14 +24,28 @@ assignment_31
     Write a program to accept a string from user and copy that characters of that string into another string by toggling the case.
 
 assignment_32
-Write a program which checks if it's 15th bit is ON or OFF.
-Write a program which checks if it's 5th and 18th bit is ON or OFF.
-Write a program which checks if it's 7th, 15th, 21st and 28th bit is ON or OFF.
-Write a program which checks if it's 7th, 85th and 9th bit is ON or OFF.
-Write a program which checks if it's 1st and last bit is ON or OFF(1st bit means number 1 and last bit means 32)
+    Write a program which checks if it's 15th bit is ON or OFF.
+    Write a program which checks if it's 5th and 18th bit is ON or OFF.
+    Write a program which checks if it's 7th, 15th, 21st and 28th bit is ON or OFF.
+    Write a program which checks if it's 7th, 85th and 9th bit is ON or OFF.
+    Write a program which checks if it's 1st and last bit is ON or OFF(1st bit means number 1 and last bit means 32)
 
 assignment_33
+    Write a program which accepts one number from user and OFF the 7th bit of that number if it is on return modified number.
+    Write a program which accepts one number from user and OFF the 7th and 10th bit of that number, return modified number.
+    Write a program which accepts one number from user and toggle the 7th bit of that number, return modified number.
+    Write a program which accepts one number from user and toggle the 7th and 10th bit of that number, return modified number.
+    Write a program which accepts one number from user and ON the first 4 bits of that number, return modified number.
+
 assignment_34
+Write a program which accepts one number from user and position from user and check whether bit at that position is on or off.
+If a bit is one return TRUE otherwise return FALSE.
+Write a program which accepts one number from user and position from user and OFF that bit of that number, return modified number.
+Write a program which accepts one number from user and position from user and ON that bit of that number, return modified number.
+Write a program which accepts one number from user and position from user and toggle that bit of that number, return modified number.
+Write a program which accepts one number from user and toggle contetns of first and last nible of the number. Return modified number.
+(Nibble is a group of four bits.)
+
 assignment_35
 
 assignment_36
