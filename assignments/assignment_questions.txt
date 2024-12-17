@@ -16,7 +16,20 @@ typeof for pointer
 user defined macros
 
 assignment_31
+    create a separate VS project for each program separately
+    Write a program to accept a string from user and copy that characters of that string into another string in reverse order
+    Write a program to accept a string from user and copy that characters of that string into another string by removing all white spaces
+    Write a program to accept a string from user and copy that characters of that string into another string by converting all small character to capital
+    Write a program to accept a string from user and copy that characters of that string into another string by converting all capital character to small
+    Write a program to accept a string from user and copy that characters of that string into another string by toggling the case.
+
 assignment_32
+Write a program which checks if it's 15th bit is ON or OFF.
+Write a program which checks if it's 5th and 18th bit is ON or OFF.
+Write a program which checks if it's 7th, 15th, 21st and 28th bit is ON or OFF.
+Write a program which checks if it's 7th, 85th and 9th bit is ON or OFF.
+Write a program which checks if it's 1st and last bit is ON or OFF(1st bit means number 1 and last bit means 32)
+
 assignment_33
 assignment_34
 assignment_35
