@@ -42,12 +42,40 @@ assignment_6
 assignment_7
 assignment_8
 assignment_9
+    Write a program which accepts radius of circle from user and calculate it's area.(PI=3.14)(Area = PI * radius * radius)
+    Write a program which accept width and height of reactangle from user and calculate its area(Area=width * height)
+    Write a program which accept distance in kilometer and convert it into meter(1km=1000m)
+    Write a program which accept temperature in Fahrenheit and convert it into celcius.
+    Write a program which accept area in square feet and convert it into square meter(1sq feet = 0.0929 sq meter)
+
 assignment_10
+    Write a program which accept range from user and display all numbers between that range.
+    Write a program which accept range from user and display all even numbers between that range.
+    Write a program which accept range from user and display all odd numbers between that range.
+    Write a program which accept range from user and display addition of all numbers between that range.(accept +ve numbers only)
+    Write a program which accept range from user and display addition of all even numbers between that range.(accept +ve numbers only)
+    Write a program which accept range from user and display all numbers between that range in reverse order.
+
 assignment_11
+    Write a program which Accpet number from user and display its digits in reverse order.
+    Write a program which Accpet number from user and check whether it contains 0 in it or not.
+    Write a program which Accpet number from user and count frequency of 2 in it.
+    Write a program which Accpet number from user and count frequency of 4 in it.
+    Write a program which Accpet number from user and count frequency of such digits which are less than 6.
+
 assignment_12
+    Write a program which accept number(1234, 2394) from user and return the count of even digits.
+    Write a program which accept number(1234, 2394) from user and return the count of odd digits.
+    Write a program which accept number(1234, 2394) from user and return the count of digits in between 3 and 7.
+    Write a program which accept number(1234, 2394) from user and return the multiplication of digits.
+    Write a program which accept number(2395) from user and return difference between summation of even digits and summation of odd digits.
+    // output = (-15) = (2 -17)
+
 assignment_13
 assignment_14
 assignment_15
+
+
 
 assignment_31
     create a separate VS project for each program separately
