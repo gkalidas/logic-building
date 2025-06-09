@@ -8,7 +8,7 @@
 int main(){
     char Fname[20] = {'\0'};
     int fd = 0, iRet = 0;
-    char Buffer[50] = ['\0'];
+    char Buffer[50] = {'\0'};
 
     printf("Enter the file name that you wnat to open : \n");
     scanf("%s", Fname);
