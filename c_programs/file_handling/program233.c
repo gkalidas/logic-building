@@ -14,7 +14,7 @@ int main(){
     printf("Enter the file name that you wnat to open : \n");
     scanf("%s", Fname);
 
-    fd = open(Fname, O_RDWR);
+    fd = open(Fname, O_RDWR | O_APPEND); // here is the change from previous file
     if (fd == -1){
         printf("Unable to open file \n");
     }
