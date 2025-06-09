@@ -10,7 +10,7 @@
 
 int main(){
     char Fname[20] = {'\0'};
-    int fd = 0, iRet = 0, iCnt = 0;
+    int fd = 0, iRet = 0, iCnt = 0, iCapCount = 0;
     char Buffer[BUFFER_SIZE] = {'\0'};
 
     printf("Enter the file name that you wnat to open : \n");
@@ -29,11 +29,15 @@ int main(){
             
             for(iCnt = 0; iCnt < iRet; iCnt++){
                 printf("%c\n", Buffer[iCnt]);
+                if ('A' <= Buffer[iCnt] && Buffer[iCnt] <= 'Z'){
+                    iCapCount ++;
+                }
             }
 
             // cleanging the garbage
             memset(Buffer,'\0', BUFFER_SIZE);
         }
+        printf("No of capital characters are %d\n", iCapCount);
     }
     return 0;
 }
