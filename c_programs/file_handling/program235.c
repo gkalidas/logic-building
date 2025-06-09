@@ -15,7 +15,7 @@ int main(){
     scanf("%s", Fname);
 
     fd = open(Fname,O_CREAT | O_WRONLY | O_APPEND); // here is the change from previous file
-    // O_WRONLY, O_RDONLY, 
+    // O_WRONLY, O_RDONLY, O_CREAT
     if (fd == -1){
         printf("Unable to open file \n");
     }
