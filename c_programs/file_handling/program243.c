@@ -22,11 +22,11 @@ int main(){
         printf("File is successfully opened with fd : %d\n ", fd);
         // TODO - Write your own strlen function in practice.
 
-        while((iRet=read(fd, Buffer, 1024)) !=0){
+        while((iRet=read(fd, Buffer, sizeof(Buffer))) !=0){
             // printf("%s", Buffer);
             write(1, Buffer, iRet);
             // cleanging the garbage
-            memset(Buffer,'\0', 1024);
+            memset(Buffer,'\0', sizeof(Buffer));
         }   
     }
     return 0;
