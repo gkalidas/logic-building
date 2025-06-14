@@ -8,35 +8,37 @@
 
 #define BUFFER_SIZE 1024
 
-int countChars(char arr[]){
-    int CapitalCount = 0;
-    while(*arr != '\0'){
-        if (('A' <= *arr) && (*arr <= 'Z')){
-            CapitalCount++;
+int CountCapital(char FName[]){
+    int CapitalCount = 0, fd = 0, read_chars = 0;
+    char arr[] = {'\0'};
+    char Buffer[BUFFER_SIZE] = {'\0'};
+
+    fd = open(FName, O_RDONLY);
+    if(fd == -1){
+        printf("Unable to open the file ");
+    }
+    else{
+        while((read_chars = read(fd, Buffer, BUFFER_SIZE)) != 0){
+            for (int iCnt = 0; iCnt < read_chars; iCnt++ ){
+                if (('A' <= Buffer[iCnt]) && (Buffer[iCnt] <= 'Z')){
+                    CapitalCount ++;
+                }
+            }
         }
-        arr++;
     }
     return CapitalCount;
 }
 
 int main(){
     char file_name[50] = {'\0'};
-    char Buffer[BUFFER_SIZE] = {'\0'};
-    int iRet = 0, fd = 0, CharCount = 0;
+    int iRet = 0;
 
     printf("Enter file name : \n");
     scanf("%s", file_name);
 
-    fd = open(file_name, O_RDONLY);
-    if(fd == -1){
-        printf("Unable to open the file ");
-    }
-    else{
-        while((iRet = read(fd, Buffer, BUFFER_SIZE)) != 0){
-            CharCount = CharCount + countChars(Buffer);
-        }
-    }
-    printf("Given file contains %d Capital characters ", CharCount);
+    iRet = CountCapital(file_name);
+
+    printf("Given file contains %d Capital characters ", iRet);
 
     return 0;
 
