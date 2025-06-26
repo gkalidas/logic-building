@@ -9,19 +9,20 @@ typedef unsigned int UINT;
 // return false.
 
 
-bool CheckBit(UINT no, int pos){
+UINT OffBit(UINT no, int pos){
     UINT mask = 1;
     UINT iResult = 0;
 
     mask = mask << (pos - 1);
+    mask = ~mask;
     iResult = no & mask;
-    return (iResult == mask);
+    return iResult;
 }
 
 int main(){
     UINT value = 0;
     int position = 0;
-    bool bRet = false;
+    UINT Result;
 
     cout<<"Enter no";
     cin>>value;
@@ -29,14 +30,8 @@ int main(){
     cout<<"Enter position";
     cin>>position;
 
-    bRet = CheckBit(value, position);
-    if (bRet == true){
-        cout<<"Bit at" <<position<<"th given position is ON.";
-    }
-    else{
-        cout<<"Bit at" <<position<<"th given position is OFF.";
-    }
-    
+    Result = OffBit(value, position);
+    cout<<"Modified bit is "<<Result;    
 
     return 0;
 }
