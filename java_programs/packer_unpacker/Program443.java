@@ -20,7 +20,7 @@ class Program443{
                 System.out.println("Data from file is ");
                 while((iRet = fiobj.read(Arr)) != -1){
                     String str = new String(Arr, 0, iRet);
-                    System.out.println(str.length());
+                    System.out.println(str);
                 }
                 System.out.println("Value of iRet at the end "+iRet);
                 
