@@ -15,7 +15,8 @@ class Program438{
 
                 byte Arr[] = new byte[10];
                 fiobj.read(Arr);
-                System.out.println("Data from file is "+ Arr);
+                String str = new String(Arr);
+                System.out.println("Data from file is "+ str);
                 
             }
             else{
