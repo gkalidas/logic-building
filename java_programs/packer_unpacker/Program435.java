@@ -7,6 +7,7 @@ class Program431{
     {
         File fobj = new File("Marvellous.txt");
 
-        fobj.createNewFile();
+        System.out.println("File name is " + fobj.getName());
+        System.out.println("File name is " + fobj.length());
     }
 }
