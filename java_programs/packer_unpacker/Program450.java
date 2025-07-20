@@ -25,6 +25,9 @@ class Program450{
                     System.out.println(" File size is : " + Arr[i].length());
                 }
             }
+            else{
+                System.out.println("There is no such directory.")
+            }
         }
         catch(Exception eobj){
         }
