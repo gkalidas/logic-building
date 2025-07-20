@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+
+class Program433{
+
+    public static void main(String A[])
+    {
+        try{
+            File fobj = new File("Marvellous.txt");
+            if(fobj.exists()){
+                System.out.println("File already exists.")
+            }
+            else{
+                fobj.createNewFile();
+                System.out.println("file successfully created.")
+            }
+        }
+        catch(IOException iobj){
+            
+        }
+        catch(Exception eobj){
+
+        }
+    }
+}
