@@ -25,10 +25,8 @@ class Program438{
             }
         }
         catch(IOException iobj){
-
         }
         catch(Exception eobj){
-
         }
     }
 }
