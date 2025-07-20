@@ -8,15 +8,15 @@ class Program433{
         try{
             File fobj = new File("Marvellous.txt");
             if(fobj.exists()){
-                System.out.println("File already exists.")
+                System.out.println("File already exists.");
             }
             else{
                 fobj.createNewFile();
-                System.out.println("file successfully created.")
+                System.out.println("file successfully created.");
             }
         }
         catch(IOException iobj){
-            
+
         }
         catch(Exception eobj){
 
