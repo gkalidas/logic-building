@@ -6,7 +6,7 @@ class Program433{
     public static void main(String A[])
     {
         try{
-            File fobj = new File("Marvellous.txt");
+            File fobj = new File("PPA.txt");
             if(fobj.exists()){
                 System.out.println("File already exists.");
             }
