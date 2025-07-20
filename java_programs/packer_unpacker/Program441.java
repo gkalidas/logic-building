@@ -22,6 +22,7 @@ class Program441{
                     String str = new String(Arr);
                     System.out.println(iRet);
                 }
+                System.out.println("Value of iRet at the end "+iRet);
                 
             }
             else{
