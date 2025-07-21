@@ -1,12 +1,10 @@
-
-
-
-
-
 def main():
     try:
-        with open("marvellous.txt", "w") as fobj:
+        file_name = "marvellous.txt"
+        with open(file_name, "x") as fobj:
             fobj.close()
+    except FileExistsError:
+        print("File already exists.")
     except Exception as e:
         print("Exception while creating a new file ", e)
 
