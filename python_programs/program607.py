@@ -3,8 +3,10 @@ def Display():
     print("Pune Maharashtra")
 
 def main():
+    print("Inside main")
     Display()
     Display()
 
 if __name__ == "__main__":
+    print("Inside starter")
     main()
