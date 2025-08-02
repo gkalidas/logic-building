@@ -1,18 +1,19 @@
-def CheckDivisible(No1):
-    if ((No1%3 == 0) and (No1%3 == 0)):
-        return True
+def Maximum(No1, No2, No3):
+    if((No1 > No2) and (No1 > No3)):
+        return No1
+    elif((No2 > No1) and (No2 > No3)):
+        return No2
     else:
-        return False
+        return No3
 
 def main():
-    value1 = int(input("Enter no : "))
+    value1 = int(input("Enter first no : "))
+    value2 = int(input("Enter second no : "))
+    value3 = int(input("Enter third no : "))
     
-    bRet = CheckDivisible(value1)
+    iRet = Maximum(value1, value2, value3)
 
-    if(bRet == True):
-        print("{value1} is Divisible by 3 &(or) 5 no")
-    else:
-        print("{value1} is not Divisible by 3 & 5 no")
+    print(f"{iRet} is the maximum no")
 
 if __name__ == "__main__":
     main()
