@@ -3,5 +3,6 @@ def Display():
     print("Pune Maharashtra")
 
 Display()
+Display()
 
 print("End of program")
