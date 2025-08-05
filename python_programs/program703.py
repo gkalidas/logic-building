@@ -1,0 +1,149 @@
+class Node:
+    def __init__(self, no):
+        self.data = no
+        self.next = None
+
+class SinglyLL:
+    def __init__(self):
+        self.icount = 0
+        self.first = None
+    
+    def insert_first(self, no):
+        newn = Node(no)
+        if(self.first == None):
+            self.first = newn
+        else:
+            newn.next = self.first
+            self.first = newn
+        self.icount = self.icount + 1
+
+    def count(self):
+        return self.icount
+    
+    def display(self):
+        temp = self.first
+        while(temp != None):
+            print("|", temp.data, end="|-> ")
+            temp = temp.next
+        print("NULL")
+    
+    def insert_last(self, no):
+        newn = Node(no)
+        
+        if(self.first == None):
+            self.first = newn
+        else:
+            temp = self.first
+            while(temp.next != None):
+                temp = temp.next
+            temp.next = newn
+        self.icount = self.icount + 1
+    
+    def delete_first(self):
+        temp = self.first
+        if(temp.next == None):
+            del temp
+            self.first = None
+        else:
+            self.first = self.first.next
+            del temp
+        self.icount = self.icount - 1
+    
+    def delete_last(self):
+        temp = self.first
+        target = None
+        if(temp == None):
+            return
+        if(temp.next == None):
+            del temp
+            self.first = None
+        else:
+            while(temp.next.next != None):
+                temp = temp.next
+            target = temp.next.next
+            temp.next = None
+            del target
+        self.icount = self.icount - 1
+
+    def insert_at_pos(self, no, pos):
+        temp = self.first
+        newn = Node(no)
+        icount = 1
+
+        if(temp == None):
+            self.first == newn
+        elif(pos == 1):
+            self.insert_first(no)
+        elif(pos == (self.icount + 1)):
+            self.insert_last(no)
+        else:
+            while(icount < (pos-1)):
+                icount = icount + 1
+                temp = temp.next
+            newn.next = temp.next
+            temp.next = newn
+            self.icount = self.icount + 1
+    
+    def delete_at_pos(self, pos):
+        temp = self.first
+        target = None
+        count = 1
+
+        if(temp == None):
+            return
+        elif(pos == 1):
+            self.delete_first()
+        elif(pos == (self.icount)):
+            self.delete_last()
+        else:
+            while(count< (pos-1)):
+                temp = temp.next
+                count = count +1
+            target = temp.next
+            temp.next = temp.next.next
+            del target
+            self.icount = self.icount - 1
+
+
+def main():
+    sobj = SinglyLL()
+    sobj.insert_first(51)
+    sobj.insert_first(21)
+    sobj.insert_first(11)
+
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+    sobj.insert_last(101)
+    sobj.insert_last(111)
+    sobj.insert_last(121)
+    
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+    sobj.delete_first()
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+    sobj.delete_last()
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+    sobj.insert_at_pos(55,3)
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+
+    sobj.delete_at_pos(4)
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+    
+
+if __name__ == "__main__":
+    main()
