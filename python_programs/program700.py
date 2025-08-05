@@ -1,90 +1,94 @@
 class Node:
-    def __init__(self, No):
-        self.data = No
+    def __init__(self, no):
+        self.data = no
         self.next = None
-    
-    def Display(first):
-        while(first != None):
-            print(first)
-            first = first.next
 
 class SinglyLL:
     def __init__(self):
-        self.First = None
-        self.iCount = 0
+        self.icount = 0
+        self.first = None
     
-    # 8
-    # 1 = InsertFirst
-    def InsertFirst(self, No):
-        newn = Node(No)
-        if(self.First == None): # LL is empty
-            self.First = newn
-        else: # LL contains at least one node
-            newn.next = self.First
-            self.First = newn
-        self.iCount = self.iCount + 1
+    def insert_first(self, no):
+        newn = Node(no)
+        if(self.first == None):
+            self.first = newn
+        else:
+            newn.next = self.first
+            self.first = newn
+        self.icount = self.icount + 1
 
-    def Display(self):
-        temp = self.First
+    def count(self):
+        return self.icount
+    
+    def display(self):
+        temp = self.first
         while(temp != None):
-            print("|", temp.data,end=" | -> ")
+            print("|", temp.data, end="|-> ")
             temp = temp.next
         print("NULL")
-
-    def Count(self):
-        return self.iCount
     
-    def InsertFirst(self, No):
-        newn = Node(No)
-        if(self.First == None): # LL is empty
-            self.First = newn
-        else: # LL contains at least one node
-            newn.next = self.First
-            self.First = newn
-        self.iCount = self.iCount + 1
-
-    def InsertLast(self, No):
-        newn = Node(No)
-        if(self.First == None): # LL is empty
-            self.First = newn
+    def insert_last(self, no):
+        newn = Node(no)
+        
+        if(self.first == None):
+            self.first = newn
         else:
-            temp = self.First
+            temp = self.first
             while(temp.next != None):
                 temp = temp.next
             temp.next = newn
-        self.iCount = self.iCount + 1
+        self.icount = self.icount + 1
     
-    def DeleteFirst(self):
-        temp = self.First
+    def delete_first(self):
+        temp = self.first
+        if(temp.next == None):
+            del temp
+            self.first = None
+        else:
+            self.first = self.first.next
+            del temp
+        self.icount = self.icount - 1
+    
+    def delete_last(self):
+        temp = self.first
+        target = None
         if(temp == None):
             return
-        else:
-            self.First = self.First.next
+        if(temp.next == None):
             del temp
-            self.iCount = self.iCount - 1
-    
+            self.first = None
+        else:
+            while(temp.next.next != None):
+                temp = temp.next
+            target = temp.next.next
+            temp.next = None
+            del target
+        self.icount = self.icount - 1
+
 
 def main():
-    print("Demonstration of Singly Linear Linked List")
     sobj = SinglyLL()
-    sobj.InsertFirst(51)
-    sobj.InsertFirst(21)
-    sobj.InsertFirst(11)
-    sobj.Display()
-    iRet = sobj.Count()
-    print("No of elements in Linked list are ", iRet)
+    sobj.insert_first(51)
+    sobj.insert_first(21)
+    sobj.insert_first(11)
 
-    sobj.InsertLast(101)
-    sobj.InsertLast(111)
-    sobj.InsertLast(121)
-    sobj.Display()
-    iRet = sobj.Count()
-    print("No of elements in Linked list are ", iRet)
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
 
-    sobj.DeleteFirst()
-    sobj.Display()
-    iRet = sobj.Count()
-    print("No of elements in Linked list are ", iRet)
+    sobj.insert_last(101)
+    sobj.insert_last(111)
+    sobj.insert_last(121)
     
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+
+    sobj.delete_first()
+    sobj.display()
+    i_ret = sobj.count()
+    print("No of elements in Linked list are ", i_ret)
+    
+
 if __name__ == "__main__":
     main()
